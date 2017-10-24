@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Log In – BizApp Manager</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid" id="login-page">
+        <div class="row"><div class="col-lg-4 bm-center"><img class="bm-logo" src="img/rmm-logo_dark.png"></div></div>
+        
+        <div class="row">
+<!-- ********* FORM PROPERTIES TO BE CHANGED TO 'action method="POST"' ********* -->
+            <form action method="POST" class="bm-login col-lg-4 col-sm-6 bm-center">
+                
+              <div class="form-group">
+                <label for="loginName"></label>
+                <input type="text" class="form-control bm-input__text" id="loginName" name="username" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="loginPass"></label>
+                <input type="password" class="form-control bm-input__text" id="loginPass" name="password" placeholder="Password">
+              </div>
+                <row> <button type="submit" class="btn btn-primary bm-btn" id="loginBtn" name="submit">Sign In</button> </row>
+            </form>
+        </div>
+    
+        </div>
+        
+      <!-- UNIVERSAL FOOTER -->
+        <footer>
+            <div>
+                <div class="container-fluid bm-footer">
+                    BizApp Manager Copyright © 2017 Red Mat Media
+
+                </div>
+            </div>
+        </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      
+    <script>
+        $("#loginName").focus();
+    </script>
+      
+</body>
+</html>
